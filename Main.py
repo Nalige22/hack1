@@ -12,23 +12,6 @@ collection = db["Data"]
 st.set_page_config (page_title="Girl Hacks 2023", page_icon="📒",layout="wide")
 # st.markdown(""" <style>#Sidebsr {visibility: hidden;}footer {visibility: hidden;}</style> """, unsafe_allow_html=True)
 
-def sidebar_bg(side_bg):
-
-   side_bg_ext = 'png'
-
-   st.markdown(
-      f"""
-      <style>
-      [data-testid="stSidebar"] > div:first-child {{
-          background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()});
-      }}
-      </style>
-      """,
-      unsafe_allow_html=True,
-      )
-side_bg = '/Users/nalige22/Desktop/hack6/astronaut4.jpg'
-sidebar_bg(side_bg)
-
 st.write('<style>div.block-container{padding-left:0 rem;padding-top:0.1rem;}</style>', unsafe_allow_html=True)
 
 st.markdown("<h1 style='color:#66fcf1;text-align: center;'>Latest Space Events </h1>",unsafe_allow_html=True)
